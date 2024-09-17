@@ -1,1 +1,9 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root{
+  --Inter: 'Inter', monospace;
+  --PressStart2P: 'PressStart2P', monospace;
+  --card-title-font-weight: 785;
+  --card-text-font-weight: 465;
+  --main-color: #000;
+  --text-color: #00CC14;
+}
