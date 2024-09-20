@@ -11,23 +11,27 @@
   --text-color: #00CC14;
   --contur-color:var(--text-color);
   --text-button-color:#00CC14;
+  --text-button-color-alternative:var(--main-color);
+  --text-botton-color-invert: 0;
   --background-image: 
     repeating-linear-gradient(90deg, #000 2px, transparent 4px),
     repeating-linear-gradient(0deg, #000 2px, transparent 4px),
     linear-gradient(#007f0c 0.01%, #004306);
     
-
-
-}
-
-:root.theme-light{
-  --card-title-font-weight: 'wght' 700;
-  --card-text-font-weight: 'wght' 400;
-  --main-color: #fff;
-  --text-color: #000;
-  --contur-color:var(--text-color);
-  --text-button-color:#000;
-  --background-image: 
+    
+    
+  }
+  
+  :root.theme-light{
+    --card-title-font-weight: 'wght' 700;
+    --card-text-font-weight: 'wght' 400;
+    --main-color: #fff;
+    --text-color: #000;
+    --contur-color:var(--text-color);
+    --text-button-color:#000;
+    --text-botton-color-invert: 1;
+    --text-button-color-alternative: var(--main-color);
+    --background-image: 
     repeating-linear-gradient(90deg, #d3d3d3 2px, transparent 4px),
     repeating-linear-gradient(0deg, #d3d3d3 2px, transparent 4px),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);

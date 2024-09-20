@@ -2,8 +2,17 @@
 :root{
   --Inter: 'Inter', monospace;
   --PressStart2P: 'PressStart2P', monospace;
-  --card-title-font-weight: 785;
-  --card-text-font-weight: 465;
+  --card-title-font-weight: 'wght' 785;;
+  --card-text-font-weight: 'wght' 465;
   --main-color: #000;
   --text-color: #00CC14;
+  --contur-color:var(--text-color);
+  --text-button-color:#00CC14;
+  --text-button-color-alternative:var(--main-color);
+  --text-botton-color-invert: 0;
+  --background-image: 
+    repeating-linear-gradient(90deg, #000 2px, transparent 4px),
+    repeating-linear-gradient(0deg, #000 2px, transparent 4px),
+    linear-gradient(#007f0c 0.01%, #004306);
 }
+    
