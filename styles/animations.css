@@ -41,10 +41,68 @@
   from{
     opacity: 0;
   }
-  99%{
+
+  50%{
     opacity: 1;
   }
+
   to{
     opacity: 0;
   }
+}
+
+.card__icon-button:focus-visible{
+  outline: none;
+  border: 2px solid var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.like-icon:hover .core {
+  transition: fill 0.3s linear;
+  fill: var(--text-button-color); 
+}
+
+.like-icon:hover .main-body {
+  transition: fill 0.3s 0.05s linear;
+  fill:  var(--text-button-color); 
+}
+
+.like-icon .contour {
+  transition: fill 0.1s linear;
+  fill: var(--text-button-color); 
+}
+
+.like-icon .main-body {
+  transition: fill 0.3s linear;
+  fill: transparent; 
+}
+
+.like-icon .core {
+  transition: fill 0.3s 0.03s linear;
+  fill: transparent; 
+}
+
+.like-icon:active .core,
+.is-liked .core {
+  transition: fill 0.3s linear;
+  fill: red !important; 
+}
+
+.like-icon:active .main-body,
+.is-liked .main-body {
+  transition: fill 0.3s 0.05s linear;
+  fill: red !important; 
+}
+
+.is-liked .contour{
+  transition: fill 0.3s 0.06s linear;
+  fill: red !important; 
+}
+
+.is-liked .heart{
+  animation: bigHeart 0.3s 0.1s ease-in;
+}
+
+.is-liked .sparks {
+  animation: spark 0.3s 0.3s ease-in;
 }
