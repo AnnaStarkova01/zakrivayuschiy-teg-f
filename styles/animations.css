@@ -51,6 +51,18 @@
   }
 }
 
+.like-icon{
+  position: relative;
+  right: 3px;
+  z-index: 3;
+  overflow: visible;
+}
+
+.like-icon .sparks {
+  fill: red;
+  opacity: 0;
+}
+
 .card__icon-button:focus-visible{
   outline: none;
   border: 2px solid var(--text-color);
@@ -100,9 +112,9 @@
 }
 
 .is-liked .heart{
-  animation: bigHeart 0.3s 0.1s ease-in;
+  animation: bigHeart 0.3s 0.1s ease-in alternate;
 }
 
 .is-liked .sparks {
-  animation: spark 0.3s 0.3s ease-in;
+  animation: spark 0.3s 0.3s ease-in alternate;
 }

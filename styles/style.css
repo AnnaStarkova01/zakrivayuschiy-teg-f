@@ -155,11 +155,19 @@
   font-size: 14px;
   color: var(--label-text-color); 
   z-index: 1; 
-  position:absolute;
+  position: absolute;
   right: 25px;
-  top: 55px; 
+  margin-top: 25px;
   width: auto;
   font-variation-settings: var(--card-text-font-weight);
+
+  text-shadow:
+  rgba(255, 255, 255, 0.4) -0.7px -0.7px 1px,
+  rgba(255, 255, 255, 0.4) 0.7px -0.7px 1px,
+  rgba(255, 255, 255, 0.4) 0.7px 0.7px 1px,
+  rgba(255, 255, 255, 0.4) -0.7px 0.7px 1px;
+
+  mix-blend-mode: hard-light;
 }
 
 .text-uppercase{
@@ -169,9 +177,10 @@
 @supports (text-stoke: 1px) or (-webkit-text-stroke: 1px){
   .label{
     -webkit-text-stroke: 1px var(--label-outline-color); 
-    text-stroke: 1px var(--label-outline-color); 
+    text-stroke: 1px var(--label-outline-color);
+    text-shadow: none;
   }
-}
+} 
 
 .card__img{
   max-width:100%;
@@ -279,6 +288,7 @@
   filter: invert(var(--text-botton-color-invert));
   color: var(--text-button-color);
   position: relative;
+
 }
 
 .card__icon-button{
@@ -291,18 +301,6 @@
   margin-right: 4.5px;
 }
 
-.like-icon{
-  position: relative;
-  right: 3px;
-  z-index: 3;
-  overflow: visible;
-}
-
-.like-icon .sparks {
-  fill: red;
-  opacity: 0;
-}
-
 .button-floppy{
   margin-top: 50px;
   height: 55px;
@@ -311,6 +309,9 @@
   margin-right: 0;
   margin-bottom: 103px;
   font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-floppy svg {
@@ -321,14 +322,12 @@
   filter: invert(var(--text-botton-color-invert));
   color: var(--text-button-color);
   margin-right: 5px;
-  margin-top: 5px;
 }
 
 .save-dialog{
   padding: 0;
   margin: auto;
   border: none;
-  position: fixed;
   justify-content: center;
   align-items: center;
 }
@@ -351,6 +350,7 @@
 .dialog__floppy-svg{
   color: var(--text-color);
 }
+
 .save-dialog__icon{
   height: 39px;
   width: 39px;
@@ -403,7 +403,10 @@
 
   .label{
     right: 13px;
-    top: 75px; 
+  }
+
+  .save-dialog__text{
+    max-width: 198px;
   }
 
   .button-floppy{
@@ -418,8 +421,9 @@
   }
 
   .button-floppy svg {
-   margin-top: 20px;
+   margin-top: 5px;
    margin-bottom: 8px;
+   margin-left: 5px;
    height: 28px;
    width: 28px;
   }
