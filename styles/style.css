@@ -160,13 +160,8 @@
   margin-top: 25px;
   width: auto;
   font-variation-settings: var(--card-text-font-weight);
-
   text-shadow:
-  rgba(255, 255, 255, 0.4) -0.7px -0.7px 1px,
-  rgba(255, 255, 255, 0.4) 0.7px -0.7px 1px,
-  rgba(255, 255, 255, 0.4) 0.7px 0.7px 1px,
-  rgba(255, 255, 255, 0.4) -0.7px 0.7px 1px;
-
+  var(--label-outline-color) 0px 0px 1px;
   mix-blend-mode: hard-light;
 }
 
@@ -180,7 +175,7 @@
     text-stroke: 1px var(--label-outline-color);
     text-shadow: none;
   }
-} 
+}    
 
 .card__img{
   max-width:100%;

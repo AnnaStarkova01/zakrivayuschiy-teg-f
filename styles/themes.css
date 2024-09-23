@@ -5,7 +5,7 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 :root.theme-dark{
-  --card-title-font-weight: 'wght' 785;;
+  --card-title-font-weight: 'wght' 785;
   --card-text-font-weight: 'wght' 465;
   --main-color: #000;
   --text-color: #00CC14;
@@ -39,7 +39,7 @@
 }
 
 @media (prefers-color-scheme: light) { 
-  :root.theme-light{
+  :root{
     --card-title-font-weight: 'wght' 700;
     --card-text-font-weight: 'wght' 400;
     --main-color: #fff;
@@ -49,7 +49,7 @@
     --text-botton-color-invert: 1;
     --text-button-color-alternative: var(--main-color);
     --label-text-color:rgba(0, 0, 0, 0.5);
-    --label-outline-color: rgba(255, 255, 255, 0.5); 
+    --label-outline-color: rgba(255, 255, 255, 0.5);
     --background-image: 
       repeating-linear-gradient(90deg, #d3d3d3 2px, transparent 4px),
       repeating-linear-gradient(0deg, #d3d3d3 2px, transparent 4px),
